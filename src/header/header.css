@@ -1,0 +1,89 @@
+
+
+ #navbarScrollingDropdown:hover {
+    color: #f6b0ab;
+}
+
+li{
+    margin-right: 15px;
+}
+
+#modal{
+/* background-color: rgb(7, 7, 7);
+opacity: .1; 
+border: none; */
+margin-top: 100px;
+
+}
+
+#modalinput{
+height: 60px;
+border: none;
+
+}
+#modalinput:hover{
+box-shadow: none;
+}
+#modalbody{
+    /* background-color: rgb(7, 7, 7);
+    opacity: .3;
+    border: none; */
+    display: flex;
+    padding: 0;
+}
+
+#button-addon1{
+    padding: 0;
+    border: none;
+    
+}
+.btn{
+    min-width:3rem;
+}
+#button-addon1:hover{
+    background-color: white;
+}
+
+
+#item{
+    display: inline-block;
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
