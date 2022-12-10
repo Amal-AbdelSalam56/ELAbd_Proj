@@ -1,11 +1,10 @@
 
-
  #navbarScrollingDropdown:hover {
     color: #f6b0ab;
 }
 
 li{
-    margin-right: 15px;
+    margin-right: 13px;
 }
 
 #modal{
@@ -17,12 +16,13 @@ margin-top: 100px;
 }
 
 #modalinput{
-height: 60px;
+height: 55px;
 border: none;
-
+width: 460px;
 }
-#modalinput:hover{
+#modalinput:focus{
 box-shadow: none;
+border: none;
 }
 #modalbody{
     /* background-color: rgb(7, 7, 7);
@@ -30,6 +30,7 @@ box-shadow: none;
     border: none; */
     display: flex;
     padding: 0;
+    width: 34rem;
 }
 
 #button-addon1{
@@ -37,11 +38,14 @@ box-shadow: none;
     border: none;
     
 }
-.btn{
-    min-width:3rem;
+#button-addon1 {
+    min-width: 1rem;
 }
+
 #button-addon1:hover{
     background-color: white;
+    min-width: 1rem;
+
 }
 
 

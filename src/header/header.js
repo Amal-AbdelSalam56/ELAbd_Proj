@@ -57,7 +57,7 @@ const Header = () => {
 
   return (<>
 
-    <Navbar bg="light" expand="lg" className="sticky-top transparent-navbar navbar-fixed-top ">
+    <Navbar bg="dark" expand="lg" className="sticky-top transparent-navbar navbar-fixed-top " style={{ height: "110px", top: "0" }}>
       <Container >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -111,27 +111,26 @@ const Header = () => {
 
         </Navbar.Collapse>
 
-        <ul class="list-unstyled header-actions d-flex mb-0">
+        <ul className="list-unstyled header-actions d-flex mb-0">
           <li>
             <Nav.Link href={url} className="navbar-brand" onClick={handleShow}>
-              <i style={{ color: "#6f3c2e", fontSize: "20px" }}><FaSearch /></i>
+              <i style={{ color: "#6f3c2e", fontSize: "20px" ,marginRight:"0"}}><FaSearch /></i>
             </Nav.Link>
-            <Modal show={show} onHide={handleClose} id="modal" >
+            <Modal show={show} onHide={handleClose} id="modal" style={{marginRight:"0"}} >
               {/* <Modal.Header closeButton id="modalheader"></Modal.Header> */}
               <Modal.Body id="modalbody" >
                 <Form.Control id="modalinput" type="search" aria-label="Example text with button addon"
-                  aria-describedby="basic-addon1" placeholder=" search" autoFocus />
+                  aria-describedby="basic-addon1" placeholder=" Search for....." autoFocus />
                 <Button variant="outline-secondary" id="button-addon1">
                   <i style={{ color: "#6f3c2e", fontSize: "20px" }}><FaSearch /></i>
                 </Button>
-
               </Modal.Body>
             </Modal>
 
           </li>
           <li>
             <Nav.Link href={url} >
-              <i style={{ color: "#6f3c2e", fontSize: "20px" }} ><FaUserAlt /></i>
+              <i style={{ color: "#6f3c2e", fontSize: "18px" }} ><FaUserAlt /></i>
             </Nav.Link>
 
           </li>
@@ -146,7 +145,7 @@ const Header = () => {
             </Nav.Link>
 
           </li>
-          <li class="d-flex">
+          <li className="d-flex">
             <Nav.Link href={url}>
               <i style={{ color: "#6f3c2e", fontSize: "25px" }} ><MdLocationPin /></i>
             </Nav.Link>
@@ -154,13 +153,6 @@ const Header = () => {
         </ul>
       </Container>
     </Navbar>
-
-
-
-
-
-
-
   </>
   )
 }
